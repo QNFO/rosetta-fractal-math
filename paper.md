@@ -160,7 +160,15 @@ This framework makes specific, testable predictions:
 
 If $\Delta Q = 0$ -- if digital translation is exact -- the entire framework collapses. This is the hallmark of good science.
 
-# 9. Conclusion
+# 9. Note: An Alternative Radix Framing
+
+A complementary reframing of §7's $S_{\text{Base}}$ term deserves acknowledgment. Rather than describing the transmon's native structure as "continuous," one can equivalently describe it as **discrete but unbounded**: Planck quantization gives every bosonic mode an integer energy ladder $E_n = n\hbar\omega$ ($n = 0, 1, 2, \ldots$), which is discrete by construction, not merely a truncation artifact. Under this framing, the qubit encoding is not a continuous-to-discrete translation but a **radix conversion** -- truncating a natural base-$d$ system (where $d \approx N_{\text{max}}$, the number of resolvable levels from §4) down to base-2. The entropy cost is identical in form, $S_{\text{Base}} = \ln(N_{\text{max}}/2)$, and was already derived in §7.3 as one of the five HAL terms.
+
+This reframing suggests a constructive alternative beyond the three paths in §8.1: **qudit quantum error correction** on existing transmon hardware. Qudit generalizations of the stabilizer formalism and surface code are established results [@Gottesman1999; @Campbell2014], and qudit algorithmic generalizations (Grover, Shor, simulation) are documented [@Wang2020]. A $d$-level qudit encodes $\log_2(d)$ bits per physical element with no new fabrication required -- only control software addressing all resolvable levels instead of truncating to $\{|0\rangle, |1\rangle\}$. This complements rather than replaces the categorical non-exactness result of Theorem 1: whether one frames the source category $\mathcal{P}$ as continuous or as a discrete unbounded ladder, the functor $F: \mathcal{P} \to \mathcal{C}_{\text{qubit}}$ remains non-exact whenever $\mathcal{C}_{\text{qubit}}$ truncates to two levels. Only $F: \mathcal{P} \to \mathcal{C}_{\text{qudit}}$ (mapping onto all $d$ levels) has any prospect of exactness.
+
+We flag this as a direction for future work rather than a fully independent thesis: quantitatively distinguishing "continuous-to-discrete" loss from "unbounded-to-truncated" loss requires resolving whether the transmon's phase $\phi$ is better modeled as a continuous $S^1$ coordinate (§2.1) or as strictly quantized from the outset -- a question this paper does not settle.
+
+# 10. Conclusion
 
 Digital computation is an engineering triumph but not a universal ontology. The universe runs on complex amplitudes and continuous phase, not binary. The Approximation Entropy $S_A$ quantifies the distance between computational control and physical understanding -- in Joules.
 
