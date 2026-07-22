@@ -4,7 +4,8 @@ subtitle: "Quantifying the Irreducible Cost of Translating Continuous Physical D
 author: "Rowan Brad Quni-Gudzinas"
 date: "2026-07-22"
 license: "QNFO Unified License Agreement (QNFO-ULA)"
-doi: "10.5281/zenodo.21486754"
+doi: "10.5281/zenodo.21486780"
+concept_doi: "10.5281/zenodo.21486779"
 status: "published"
 ---
 
