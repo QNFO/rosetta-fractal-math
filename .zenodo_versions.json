@@ -1,12 +1,21 @@
 {
-  "concept_doi": "10.5281/zenodo.21486779",
-  "latest_deposit_id": 21486780,
-  "versions": [
-    {
-      "doi": "10.5281/zenodo.21486780",
-      "deposit_id": 21486780,
-      "tag": "v2.0",
-      "published_at": "2026-07-22T08:09:18.036877+00:00"
-    }
-  ]
+  "WARNING": "DUPLICATE PUBLICATION -- two independent Zenodo depositions were created for identical v1.1 content due to a concurrent-session race condition on 2026-07-22. Both DOIs are live and resolve to identical files (verified: paper.pdf checksum matches on both). This requires manual reconciliation (e.g. via Zenodo 'isNewVersionOf'/'isIdenticalTo' related_identifiers, or contacting Zenodo support to merge) -- NOT auto-resolved by this session.",
+  "canonical_candidate_1": {
+    "concept_doi": "10.5281/zenodo.21486753",
+    "deposit_id": "21486754",
+    "doi": "10.5281/zenodo.21486754",
+    "published_by": "this session (bed5961 -> 7070df9)",
+    "published_at": "2026-07-22T08:07:09Z",
+    "record_url": "https://zenodo.org/records/21486754"
+  },
+  "canonical_candidate_2": {
+    "concept_doi": "10.5281/zenodo.21486779",
+    "deposit_id": "21486780",
+    "doi": "10.5281/zenodo.21486780",
+    "published_by": "concurrent session (commit 5a247ba)",
+    "published_at": "2026-07-22T08:09:18Z",
+    "record_url": "https://zenodo.org/records/21486780",
+    "note": "Content verified identical to candidate_1 (v1.1 reconciled paper, same PDF byte-size 82019, same refs.bib) -- the concurrent session published MY reconciled v1.1 content, not the fabricated v4.0 draft. This is a duplicate record, not a fabrication."
+  },
+  "recommendation": "User should choose one DOI as canonical, then either (a) request Zenodo merge the concept records, or (b) add a related_identifiers 'isIdenticalTo' cross-reference on both, or (c) unpublish the non-canonical one via Zenodo's editable-draft window if still within it."
 }
